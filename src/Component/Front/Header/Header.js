@@ -1,5 +1,5 @@
 import React from 'react';
-import {link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import"./Header.css";
 import { MdAssessment,MdCreditCard,MdLogout } from "react-icons/md";
 
@@ -8,33 +8,34 @@ const Header = () => {
     <header className='header'>
         <div>
             <h1>
-               <li to="/" className='logo'>
-                Electronics Shop
+            
+               <li className='logo'>
+               <Link to="/">Electronics Shop</Link>
+                
                </li>
             </h1>
         </div>
         <div className='header-links'>
-            <ul>
-                
+            <ul> 
                 <li>
-                    <a to="/">
+                    <Link to="/">
                     <MdLogout/> Home 
-                    </a> 
+                    </Link> 
 
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a to="/signup">
+                    <Link to="/signup">
                        <MdAssessment/> Signup
-                        </a>
+                        </Link>
 
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a to="/cart">
-                    <MdCreditCard />Carte</a>
+                    <Link to="/cart">
+                    <MdCreditCard />Carte</Link>
 
                 </li>
             </ul>
